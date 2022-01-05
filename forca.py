@@ -36,7 +36,7 @@ def jogar():
     if(acertou):
       mensagem_vencedor()     
     else:
-      mensagem_perdedor()    
+      mensagem_perdedor(palavra_secreta)    
     #print("Fim do jogo")
 
 
@@ -79,9 +79,10 @@ def marca_chute_correto(chute, letras_acertadas, palavra_secreta):
 
 
 def mensagem_vencedor():
-    print("Você ganhou!!")
-def mensagem_perdedor():
-    print("Você perdeu!!")
+    print("Você ganhou!!!!")
+def mensagem_perdedor(palavra_secreta):
+    print("Você perdeu!!!!")
+    print("A palavra secreta era {}".format(palavra_secreta))
 
 if(__name__ == "__main__"):
   jogar()
